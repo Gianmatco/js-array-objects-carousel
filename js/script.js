@@ -120,7 +120,20 @@ prev.addEventListener("click", slideUp);
 3. aggiungere allo slider una timing function per far partire lo slider in automatico (con un bottone per fermarlo)
 4. refactoring
 */
-function avviaSlider(){
 
 
+//const slider = setTimeout(slideUp,3000)
+const btn = document.querySelector('button');
+
+function saluta(){
+  
 }
+
+btn.addEventListener('click',()=>{
+  clearTimeout(intervallo)
+
+});
+
+const intervallo = setInterval(slideUp,3000);
+
+
